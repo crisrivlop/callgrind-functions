@@ -1,5 +1,25 @@
 Final exam Computer Architecture
 =====
+
+
+```c
+int method_with_static_variables (int x, int y, int z){
+    static int counter;
+    counter++;
+    return (x+y+z+counter);
+}
+```
+
+
+
+```c
+int method_no_static_variables (int x, int y, int z){
+    int counter;
+    counter++;
+    return (x+y+z+counter);
+}
+```
+
 Use the following command to compile the whole project
 
     make all
