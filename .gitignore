@@ -1,0 +1,6 @@
+*.o
+*.asm
+.vscode/
+callgrind.out.*
+stack-test
+static-test

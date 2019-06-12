@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+echo "Executing callgrind method_with_static_variables"
+valgrind --callgrind-out-file=callgrind.out.static --tool=callgrind ./static-test
+
+
+echo
+echo "Executing callgrind method_no_static_variables"
+valgrind --callgrind-out-file=callgrind.out.stack --tool=callgrind ./stack-test
